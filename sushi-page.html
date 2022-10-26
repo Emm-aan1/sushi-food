@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shusi Food Page 1</title>
+  <link rel="stylesheet" href="sushi.css">
+  <link rel="stylesheet" href="@media.css">
+  <script src="https://kit.fontawesome.com/6e274c4be9.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--Header Section-->
+
+  <div class="header">
+    <div class="left left-head">
+      <div>
+        <a onclick="showTab()">
+          <img class="menu2" src="images/header2/command-menu.png" alt="command-menu">
+        </a>
+      </div>
+      <div>
+        <img class="chat" src="images/header2/chat-icon.png" alt="chat">
+      </div>
+    </div>
+
+    <div class="middle middle-head">
+      <a href="index.html" class="middle">Sushi Food App</a>
+    </div>
+
+    <div class="right right-head" id="right-head">
+      <i class="fa-solid fa-xmark fa" onclick="hideTab()"></i>
+      <div>
+        <img class="user2" src="images/header/user.png" alt="user" title="Anonymous (you)">
+      </div>
+      <div class="login2">Log in or create account</div>
+      <div class="option-view">
+        Options
+      </div>
+      <div>
+        <img src="images/header2/full-size.png" alt="full-size" class="full-size">
+      </div>
+    </div>
+  </div>
+  <script>
+    let showTabs = document.getElementById('right-head')
+    function showTab() {
+      showTabs.style.left = '0'
+    }
+    function hideTab() {
+      showTabs.style.left = '-4.8em'
+    }
+  </script>
+
+
+  <!--Body Sections-->
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img class="img-view" src="images/welcome2.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img class="img-view" src="images/sushi_food.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img class="img-view" src="images/cart.png" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi Food App</title>
+  <link rel="stylesheet" href="sushi.css">
+  <link rel="stylesheet" href="@media.css">
+  <script src="https://kit.fontawesome.com/6e274c4be9.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Header Section-->
+  <div id="header">
+    <div class="left">
+      <div>
+        <a onclick="showTab()">
+          <img class="menu" src="images/header/command-menu.png" alt="command-menu" title="Main menu">
+        </a>
+      </div>
+      <div>
+        <img class="hand" src="images/header/hands.png" alt="blue-hand" title="Hand tool">
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="middle-text">Sushi Food App</div>
+    </div>
+
+    <div class="right" id="right">
+      <i class="fa-solid fa-xmark fa" onclick="hideTab()"></i>
+      <div>
+        <img class="user" src="images/header/user.png" alt="user" title="Anonymous (you)">
+      </div>
+      <div class="login">Log in</div>
+      <div>
+        <a class="play" href="sushi-page.html" target="_blank">
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
+      </div>
+      <div class="percent" title="zoom/view option">
+        25%
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let showTabs = document.getElementById('right')
+    function showTab() {
+      showTabs.style.left = '0'
+    }
+    function hideTab() {
+      showTabs.style.left = '-4.8em'
+    }
+  </script>
+
+
+  <!--Top Body Section-->
+  <div class="section-top">
+    <div>
+      <img class="menu-body" src="images/header/Command-512.webp" alt="command-menu">
+    </div>
+    <div class="welcome-text">
+      <span>Welcome to Figma!</span> Create an account to edit and collaborate on this file.
+    </div>
+    <div class="google">
+      <div>
+        <img src="images/header/google.png" alt="google" class="google-icon">
+      </div>
+      <div class="google-text">
+        Continue with Google
+      </div>
+    </div>
+    <div class="sign-up">
+      Sign up with email
+    </div>
+  </div>
+
+
+  <!--Main Body Section-->
+  <div class="main-body">
+    <div>
+      <p>SUSHI HOME</p>
+      <img class="sushi-home" src="images/mini_welcome.png" alt="Welcome">
+    </div>
+    <div>
+      <p>MENU</p>
+      <img class="menu-food" src="images/mini_sushi_food.png" alt="menu">
+    </div>
+    <div>
+      <p>CART</p>
+      <img class="cart" src="images/mini_cart.png" alt="cart">
+    </div>
+  </div>
+
+</body>
+
+</html>

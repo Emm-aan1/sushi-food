@@ -1,0 +1,242 @@
+@media (max-width:700px) {
+
+  #header {
+    min-width: 100vw;
+    height: 3.5em;
+  }
+
+  .left {
+    margin-left: 20px;
+    width: 1.5em;
+  }
+
+  .right {
+    width: 8em;
+    margin-right: 8px;
+  }
+
+  /* Header Icons */
+
+  .menu {
+    width: 1em;
+  }
+
+  .hand {
+    display: none;
+  }
+
+  .middle-text {
+    font-size: 14px;
+  }
+
+  .user {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    margin: 0;
+  }
+
+  .login {
+    padding: 5px;
+    font-size: 12px;
+    margin: 5px 0 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .play {
+    margin: 10px 0;
+  }
+
+  .percent {
+    margin: 10px 0;
+  }
+
+
+  .right .fa {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .right {
+    display: block;
+    background: #999999e9;
+    width: 4.2em;
+    height: 100vh;
+    padding: 10px 7px 0 0;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: -4.8em;
+    z-index: 5;
+    transition: 1s;
+  }
+
+
+  /* Top Body Section */
+
+  .section-top {
+    padding: 0 10px;
+    width: 15em;
+    height: 3em;
+    margin-bottom: 1.7em;
+  }
+
+  .menu-body {
+    width: 1em;
+    margin-right: 5px;
+  }
+
+  .welcome-text {
+    font-size: 8px;
+    text-align: justify;
+  }
+
+  .google {
+    margin-left: -10px;
+    display: flex;
+    border: none;
+  }
+
+  .google-icon {
+    width: 1em;
+  }
+
+  .google-text {
+    display: none;
+  }
+
+  .sign-up {
+    font-size: 8px;
+    text-align: center;
+    margin-left: -15px;
+    padding: 4px 8px;
+  }
+
+
+  /* Main Body Section */
+
+  .main-body {
+    display: inline;
+    text-align: center;
+  }
+
+  .main-body p {
+    color: rgb(160, 160, 160);
+    font-size: 10px;
+    margin-bottom: -20px;
+  }
+
+  .sushi-home,
+  .menu-food,
+  .cart {
+    width: 17em;
+    height: 12.5em;
+    object-fit: contain;
+  }
+
+  .sushi-home {
+    margin-left: -5px;
+  }
+
+  .cart {
+    margin-right: -5px;
+  }
+
+
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  /* Sushi Page 1 */
+
+  .left-head {
+    margin-left: 20px;
+    width: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-head {
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    margin-right: 20px;
+  }
+
+
+  /* Header2 Icons */
+
+  .menu2 {
+    width: 22px;
+  }
+
+  .chat {
+    display: none;
+  }
+
+  .user2 {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    margin: 5px 0;
+  }
+
+  .login2 {
+    color: white;
+    font-size: 10px;
+    margin: 5px 0 10px 5px;
+    padding: 5px 5px;
+    text-align: center;
+  }
+
+  .option-view {
+    font-size: 12px;
+    margin: 5px 0;
+    cursor: default;
+  }
+
+  .full-size {
+    margin: 5px 0;
+    width: 1.4em;
+    color: white;
+  }
+
+  .right-head {
+    display: block;
+    background: #999999e9;
+    width: 4.2em;
+    height: 100vh;
+    padding: 10px 7px 0 0;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: -4.8em;
+    z-index: 5;
+    transition: 1s;
+  }
+
+  /* Body Section */
+
+  .mySlides {
+    display: none;
+  }
+
+  .img-view {
+    margin-top: 150px;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    padding: 16px 2px;
+    margin-top: 60px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 0.7em;
+    width: 0.7em;
+    margin: 0 10px;
+  }
+}
